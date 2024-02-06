@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+<!--        <referenceBlock name="logo">-->
+<!--            <arguments>-->
+<!--                <argument name="logo_file" xsi:type="string">images/logo.png</argument>-->
+<!--                <argument name="logo_img_width" xsi:type="number">350</argument>-->
+<!--                <argument name="logo_img_height" xsi:type="number">350</argument>-->
+<!--            </arguments>-->
+<!--        </referenceBlock>-->
+
+
+        <container name="header.main.wrapper" htmlTag="div" htmlClass="header-wrapper clearfix" before="-" />
+
+        <referenceContainer name="header.container" htmlId="header">
+            <container name="header.top" htmlTag="div" htmlClass="header-top" before="-">
+                <container name="header.top.container" htmlTag="div" htmlClass="container">
+                    <container name="header.top.left" htmlTag="div" htmlClass="header-left" />
+                    <container name="header.top.right" htmlTag="div" htmlClass="header-right" />
+                </container>
+            </container>
+            <container name="header.main" htmlTag="div" htmlClass="header-main" after="header.top">
+                <container name="header.main.container" htmlTag="div" htmlClass="container">
+                    <container name="header.main.left" htmlTag="div" htmlClass="header-left" />
+                    <container name="header.main.center" htmlTag="div" htmlClass="header-center" />
+                    <container name="header.main.right" htmlTag="div" htmlClass="header-right" />
+                </container>
+            </container>
+
+        </referenceContainer>
+
+        <referenceContainer name="header.main.right">
+            <block class="Magento\Framework\View\Element\Template" name="header.telephone.block" template="Magento_Theme::html/telephone.phtml" before="-">
+                <block class="Magento\Cms\Block\Block" name="header.telephone.cms" as="telephone">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">telephone-block</argument>
+                    </arguments>
+                </block>
+            </block>
+        </referenceContainer>
+
+        <referenceBlock name="form.subscribe" remove="true" />
+        <referenceBlock name="footer_links" remove="true"/>
+
+        <referenceContainer name="footer">
+
+            <block class="Magento\Cms\Block\Block" name="header.footer.cms" as="site-footer">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">footer-block</argument>
+                </arguments>
+            </block>
+
+        </referenceContainer>
+
+        <referenceContainer name="menu.main.wrap">
+
+            <block class="Magento\Cms\Block\Block" name="sale.promo.block" as="sale-promo" after="navigation.sections">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">sale-promo-block</argument>
+                </arguments>
+            </block>
+
+        </referenceContainer>
+
+        <container name="footer.bottom" htmlTag="div" htmlClass="footer-bottom" />
+
+        <container name="menu.main.wrap" htmlTag="div" htmlClass="main-menu-wrap" />
+        <move element="header.main.wrapper" destination="page.wrapper" before="-"/>
+        <move element="header.container" destination="header.main.wrapper" before="-"/>
+        <move element="header.links" destination="header.top.right" />
+        <move element="logo" destination="header.main.left" />
+        <move element="top.search" destination="header.main.center" />
+        <move element="minicart" destination="header.main.right" />
+        <move element="navigation.sections" destination="menu.main.wrap" before="sale.promo.block" />
+        <move element="menu.main.wrap" destination="header.container" after="header.main" />
+        <move element="copyright" destination="footer.bottom" />
+        <move element="footer.bottom" destination="footer-container" after="footer" />
+
+
+    </body>
+</page>
