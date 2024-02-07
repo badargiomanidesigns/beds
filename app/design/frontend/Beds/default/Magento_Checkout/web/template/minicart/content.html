@@ -36,35 +36,15 @@
             <translate args="'of'" if="maxItemsToDisplay < getCartLineItemsCount()"></translate>
             <span class="count" text="getCartParam('summary_count').toLocaleString(window.LOCALE)"></span>
             <!-- ko if: (getCartParam('summary_count') > 1) -->
-            <span translate="'Items in Cart'"></span>
+            <span translate="'Items'"></span>
             <!--/ko-->
             <!-- ko if: (getCartParam('summary_count') <= 1) -->
-            <span translate="'Item in Cart'"></span>
+            <span translate="'Item'"></span>
             <!--/ko-->
-            <a href="" >View Basket</a>
         </div>
-
-        <each args="getRegion('subtotalContainer')" render=""></each>
-        <each args="getRegion('extraInfo')" render=""></each>
-
-        <div class="actions" if="getCartParam('possible_onepage_checkout')">
-            <div class="primary">
-                <button
-                    id="top-cart-btn-checkout"
-                    type="button"
-                    class="action primary checkout"
-                    data-action="close"
-                    data-bind="
-                            attr: {
-                                title: $t('Proceed to Checkout')
-                            },
-                            click: closeMinicart()
-                        "
-                    translate="'Proceed to Checkout'">
-                </button>
-                <div data-bind="html: getCartParamUnsanitizedHtml('extra_actions')"></div>
-            </div>
-        </div>
+        <a class="action viewcart" data-bind="attr: {href: shoppingCartUrl}" >
+            <span translate="'View Basket'"></span>
+        </a>
     </if>
 
     <if args="getCartParam('summary_count')">
@@ -99,7 +79,28 @@
             </a>
         </div>
     </div>
-
+    <if args="getCartParam('summary_count')">
+        <each args="getRegion('subtotalContainer')" render=""></each>
+        <each args="getRegion('extraInfo')" render=""></each>
+        <div class="actions" if="getCartParam('possible_onepage_checkout')">
+            <div class="primary">
+                <button
+                    id="top-cart-btn-checkout"
+                    type="button"
+                    class="action primary checkout"
+                    data-action="close"
+                    data-bind="
+                                attr: {
+                                    title: $t('Checkout')
+                                },
+                                click: closeMinicart()
+                            "
+                    translate="'Checkout'">
+                </button>
+                <div data-bind="html: getCartParamUnsanitizedHtml('extra_actions')"></div>
+            </div>
+        </div>
+    </if>
     <div id="minicart-widgets" class="minicart-widgets" if="regionHasElements('promotion')">
         <each args="getRegion('promotion')" render=""></each>
     </div>

@@ -11,7 +11,6 @@ use Magento\Framework\App\Action\Action;
 // phpcs:disable Generic.Files.LineLength.TooLong
 // phpcs:disable Magento2.Templates.ThisInTemplate.FoundHelper
 ?>
-Hello
 <?php if ($exist = ($block->getProductCollection() && $block->getProductCollection()->getSize())): ?>
     <?php
     $type = 'widget-product-grid';
@@ -41,17 +40,21 @@ Hello
                     <?php foreach ($items as $_item): ?>
                         <?= /* @noEscape */ ($iterator++ == 1) ? '<li class="product-item">' : '</li><li class="product-item">' ?>
                         <div class="product-item-info">
-                            <a href="<?= $block->escapeUrl($block->getProductUrl($_item)) ?>" class="product-item-photo">
-                                <?= $block->getImage($_item, $image)->toHtml() ?>
-                            </a>
-                            <div class="product-item-details">
+                            <div class="product-item-details inner-wrap">
                                 <strong class="product-item-name">
                                     <a title="<?= $block->escapeHtml($_item->getName()) ?>"
                                        href="<?= $block->escapeUrl($block->getProductUrl($_item)) ?>"
                                        class="product-item-link">
-                                        <?= $block->escapeHtml($_item->getName()) ?>
+                                        <h3 class="product__title"><?= $block->escapeHtml($_item->getName()) ?></h3>
                                     </a>
                                 </strong>
+                                <div class="product-image">
+                                    <a href="<?= $block->escapeUrl($block->getProductUrl($_item)) ?>" class="product-item-photo">
+                                        <div class="inner">
+                                            <?= $block->getImage($_item, $image)->toHtml() ?>
+                                        </div>
+                                    </a>
+                                </div>
                                 <?php if ($templateType): ?>
                                     <?= $block->getReviewsSummaryHtml($_item, $templateType) ?>
                                 <?php endif; ?>
