@@ -1574,6 +1574,7 @@ a.action.viewcart span {
     border: 1px solid #9c3;
     display: block;
     width: 100%;
+    margin-bottom: 0;
 }
 .fotorama__stage {
     border: 1px solid rgb(221, 221, 221);
@@ -1660,7 +1661,9 @@ a.action.viewcart span {
 }
 /* Product details Tabs */
 .product.data.items > .item.content {
+    border: none !important;
     border-top: 1px solid #cccccc !important;
+    margin-top: 44px !important;
 }
 .product.data.items > .item.title > .switch {
     border: 0;
@@ -1680,7 +1683,96 @@ a.action.viewcart span {
     color: #21293c!important;
     border-color: #e13b3f !important;
 }
-.product.data.items > .item.content {
-    border: 1px solid #dae2e6 !important;
-    margin-top: 44px !important;
+.product.data.items > .item.title > a:hover {
+    text-decoration: underline !important;
+}
+.button {
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    vertical-align: middle;
+    touch-action: manipulation;
+    padding: 6px 12px;
+    cursor: pointer;
+    white-space: nowrap;
+    line-height: 1.5;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    background-color: #e13b3f;
+    border-color: #e13b3f;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.order-by-phone a.call-now.button {
+    margin-bottom: 20px;
+    text-decoration: none;
+    vertical-align: middle;
+    font-family: Poppins;
+    letter-spacing: .05em;
+    font-weight: 400;
+    line-height: 43px;
+    width: 100%;
+    font-size: 2em;
+    text-transform: uppercase;
+    background-color: #9c3;
+    margin-top: 20px;
+}
+.order-by-phone a.call-now.button:hover {
+    color: #fff;
+}
+.box-tocart {
+    margin: 0 !important;
+}
+.box-tocart .fieldset {
+    margin-bottom: 0;
+}
+.product.data.items > .item.title > .switch {
+    padding: 0px !important;
+    margin-right: 35px;
+}
+.fotorama__thumb-border {
+    border: 2px solid #e13b3f !important;
+}
+.product-page-usps .usp-box {
+    width: 100%;
+    margin: auto;
+    border: solid 2px #a31233;
+    margin-top: -2px;
+    height: 106px;
+    background-color: #fff;
+}
+.product-page-usps .usp-box .usp-icon {
+    float: left;
+    width: 14%;
+    height: 84px;
+}
+.product-page-usps .usp-box .usp-right-text {
+    padding-top: 15px;
+}
+.Slider_Offer_Product {
+    font-family: poppins,sans-serif;
+    font-size: 20px;
+    color: #a31233;
+    text-decoration: none;
+    line-height: 32px;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+.Home_Body_Paragraph_Large_Product {
+    font-family: signika,sans-serif;
+    font-size: 12px;
+    color: #212426;
+    text-decoration: none;
+    line-height: 18px;
+    letter-spacing: 0;
+    font-weight: 300;
+}
+.product-page-call-now-bottom-text {
+    margin-top: -5px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.2em;
+    margin-bottom: 20px;
 }

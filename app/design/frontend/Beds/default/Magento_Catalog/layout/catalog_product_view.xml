@@ -208,5 +208,17 @@
                 name="product_viewed_counter"
                 template="Magento_Catalog::product/view/counter.phtml"/>
         </referenceContainer>
+
+        <referenceBlock name="product.info.addto" remove="true" />
+        <referenceBlock name="view.addto.compare" remove="true" />
+
+        <!-- new cms block -->
+<!--        <referenceBlock name="product.info.main">-->
+<!--            <block class="Magento\Cms\Block\Block" name="product.usps.block" as="product-usps-block" after="product.info.social">-->
+<!--                <arguments>-->
+<!--                    <argument name="block_id" xsi:type="string">product-usps-block</argument>-->
+<!--                </arguments>-->
+<!--            </block>-->
+<!--        </referenceBlock>-->
     </body>
 </page>
