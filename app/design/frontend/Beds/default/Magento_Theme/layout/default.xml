@@ -82,6 +82,10 @@
         <move element="copyright" destination="footer.bottom" />
         <move element="footer.bottom" destination="footer-container" after="footer" />
 
+        <!-- Removing extra containers and blocks -->
+
+        <referenceBlock name="catalog.compare.sidebar" remove="true"/>
+        <referenceBlock name="wishlist_sidebar" remove="true" />
 
     </body>
 </page>

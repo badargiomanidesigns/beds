@@ -9,9 +9,10 @@
 ?>
 
 <div data-block="minicart" class="minicart-wrapper">
-    <div class="cart-head cart-head2"> <i class="minicart-icon fa fa-shopping-cart"></i> <!--<span class="cart-items">0</span>--></div>
+    <!--<div class="cart-head cart-head2">--> <!--<span class="cart-items">0</span>--><!--</div>-->
     <a class="action showcart" href="<?= $block->escapeUrl($block->getShoppingCartUrl()) ?>"
        data-bind="scope: 'minicart_content'">
+        <i class="minicart-icon fa fa-shopping-cart"></i>
         <span class="text"><?= $block->escapeHtml(__('My Cart')) ?></span>
         <span class="counter qty empty"
               data-bind="css: { empty: !!getCartParam('summary_count') == false && !isLoading() },
