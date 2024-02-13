@@ -68,7 +68,9 @@
 
         </referenceContainer>
 
-        <container name="footer.bottom" htmlTag="div" htmlClass="footer-bottom" />
+        <container name="footer.bottom" htmlTag="div" htmlClass="footer-bottom">
+            <container name="footer.bottom.container" htmlTag="div" htmlClass="container" />
+        </container>
 
         <container name="menu.main.wrap" htmlTag="div" htmlClass="main-menu-wrap" />
         <move element="header.main.wrapper" destination="page.wrapper" before="-"/>
@@ -79,7 +81,7 @@
         <move element="minicart" destination="header.main.right" />
         <move element="navigation.sections" destination="menu.main.wrap" before="sale.promo.block" />
         <move element="menu.main.wrap" destination="header.container" after="header.main" />
-        <move element="copyright" destination="footer.bottom" />
+        <move element="copyright" destination="footer.bottom.container" />
         <move element="footer.bottom" destination="footer-container" after="footer" />
 
         <!-- Removing extra containers and blocks -->

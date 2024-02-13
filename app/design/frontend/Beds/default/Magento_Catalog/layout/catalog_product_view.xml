@@ -209,8 +209,8 @@
                 template="Magento_Catalog::product/view/counter.phtml"/>
         </referenceContainer>
 
-        <referenceBlock name="product.info.addto" remove="true" />
-        <referenceBlock name="view.addto.compare" remove="true" />
+        <!--<referenceBlock name="product.info.addto" remove="true" />
+        <referenceBlock name="view.addto.compare" remove="true" />-->
 
         <!-- new cms block -->
 <!--        <referenceBlock name="product.info.main">-->
