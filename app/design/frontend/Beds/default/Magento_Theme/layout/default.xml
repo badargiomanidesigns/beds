@@ -21,15 +21,17 @@
         <referenceContainer name="header.container" htmlId="header">
             <container name="header.top" htmlTag="div" htmlClass="header-top" before="-">
                 <container name="header.top.container" htmlTag="div" htmlClass="container">
-                    <container name="header.top.left" htmlTag="div" htmlClass="header-left" />
+                    <!--<container name="header.top.left" htmlTag="div" htmlClass="header-left" />-->
                     <container name="header.top.right" htmlTag="div" htmlClass="header-right" />
                 </container>
             </container>
             <container name="header.main" htmlTag="div" htmlClass="header-main" after="header.top">
                 <container name="header.main.container" htmlTag="div" htmlClass="container">
-                    <container name="header.main.left" htmlTag="div" htmlClass="header-left" />
-                    <container name="header.main.center" htmlTag="div" htmlClass="header-center" />
-                    <container name="header.main.right" htmlTag="div" htmlClass="header-right" />
+                    <container name="header.main.row" htmlTag="div" htmlClass="row">
+                        <container name="header.main.left" htmlTag="div" htmlClass="col-lg-3" />
+                        <container name="header.main.center" htmlTag="div" htmlClass="col-lg-5 d-flex align-items-center" />
+                        <container name="header.main.right" htmlTag="div" htmlClass="col-lg-4 align-items-center d-flex justify-content-end" />
+                    </container>
                 </container>
             </container>
 

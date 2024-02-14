@@ -60,6 +60,13 @@
     border: 1px solid #9c3;
     display: block;
     width: 100%;
+    text-transform: uppercase;
+}
+.catalog-product-view .product-info-main .order-by-phone a.call-now.button {
+    line-height: 36px !important;
+}
+.catalog-product-view .product-info-main .action.tocart {
+    line-height: 2rem !important;
 }
 .fotorama__stage {
     border: 1px solid rgb(221, 221, 221);
@@ -139,6 +146,9 @@
 .product-info-main .page-title-wrapper h1 {
     margin-bottom: 0.5rem !important;
 }
+.product-info-main .product-social-links {
+    margin-top: 20px;
+}
 /* Product details Tabs */
 .product.data.items > .item.content {
     border-top: 1px solid #cccccc !important;
@@ -200,9 +210,12 @@
     position: relative;
     text-align: left;
     z-index: 1;
-    padding: 0 60px;
+}
+.checkout-cart-index .featured-box {
+    /*padding: 0 60px;*/
 }
 form.form-cart {
+    width: 65% !important;
     padding: 30px 30px 10px 30px;
     background: linear-gradient(to bottom, #fff 1%, #f9f9f9 98%) repeat scroll 0 0 #f5f5f5;
     border-bottom: 1px solid #dfdfdf;
@@ -234,6 +247,17 @@ form.form-cart {
     font-weight: 400;
     color: #fff;
 }
+.cart-discount .block .actions-toolbar {
+    padding-left: 10px;
+}
+#discount-coupon-form .action.apply {
+    background: #9c3;
+    border: 1px solid #9c3;
+    border-radius: 0;
+    box-shadow: none;
+    color: white;
+    padding: 5px 14px;
+}
 .checkout-methods-items .action.checkout {
     background: #9c3 !important;
     border: 1px solid #9c3;
@@ -247,13 +271,149 @@ form.form-cart {
 .cart-summary .table {
     --bs-table-bg: #fbfbfb !important;
 }
-.cart-summary {
+.checkout-cart-index .cart-summary {
     background: #fbfbfb;
     border: 1px solid #dfdfdf;
+    width: 30% !important;
+
 }
-/*.product-item-details .product.options span.toggle span {*/
-/*    display: none;*/
+.block.crosssell ol li .action.tocart {
+    background: #9c3 !important;
+    border: 1px solid #9c3;
+    text-shadow: none;
+}
+.checkout-index-index .form-shipping-address, .checkout-index-index .form-login,  .checkout-index-index .form.methods-shipping {
+    padding: 30px 30px 10px 30px;
+    background: linear-gradient(to bottom, #fff 1%, #f9f9f9 98%) repeat scroll 0 0 #f5f5f5;
+    border-bottom: 1px solid #dfdfdf;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-top-color: #dfdfdf;
+    border-top: 4px solid #dfdfdf;
+}
+.checkout-index-index .featured-box {
+    box-shadow: none;
+}
+.opc-wrapper .step-title, .opc-wrapper .form-login {
+    border-bottom: 1px solid #dfdfdf !important;
+}
+.checkout-index-index .opc-progress-bar {
+    display: none;
+}
+.checkout-index-index .opc-block-summary {
+    background: 0;
+}
+.checkout-index-index .opc-sidebar .modal-inner-wrap {
+    background: linear-gradient(to bottom, #fff 1%, #f9f9f9 98%) repeat scroll 0 0 #f5f5f5;
+    border-bottom: 1px solid #dfdfdf;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-top-color: #dfdfdf;
+    border-top: 4px solid #dfdfdf;
+}
+.opc-wrapper .form-login, .opc-wrapper .form-shipping-address {
+    max-width: 750px !important;
+    margin-top: 46px !important;
+}
+.abs-checkout-title, .opc-wrapper .step-title, .opc-block-shipping-information .shipping-information-title, .opc-block-summary > .title, .checkout-agreements-items .checkout-agreements-item-title {
+    padding-bottom: 15px !important;
+}
+.checkout-shipping-method .step-title {
+    margin-bottom: 25px;
+}
+/*.checkout-index-index .step-title {
+    display: none;
+}*/
+.checkout-index-index #shipping-new-address-form{ display: flex!important; flex-direction: row; flex-wrap: wrap; }
+.checkout-index-index #shipping-new-address-form .field:first-child{ width:50%; padding-right:1%; }
+.checkout-index-index #shipping-new-address-form .field:nth-child(2){ width:50%; padding-left:1%; }
+.checkout-index-index #shipping-new-address-form .field{ width:100%; } /* you dont need this line if you target only the first name and last name .control .field{ width:100% !important; }*/
+.checkout-index-index #shipping-new-address-form .field.street .field{ width:100%; padding: 0; }
+.checkout-index-index .product-image-wrapper {
+    border: 1px solid lightgrey;
+}
+.checkout-index-index .methods-shipping .action.continue {
+    background: #9c3 !important;
+    border: 1px solid #9c3;
+    text-shadow: none;
+}
+/*.checkout-index-index .form.payments {*/
+/*    padding: 30px 30px 10px 30px;*/
+/*    background: linear-gradient(to bottom, #fff 1%, #f9f9f9 98%) repeat scroll 0 0 #f5f5f5;*/
+/*    border-bottom: 1px solid #dfdfdf;*/
+/*    border-left: 1px solid #ececec;*/
+/*    border-right: 1px solid #ececec;*/
+/*    border-top-color: #dfdfdf;*/
+/*    border-top: 4px solid #dfdfdf;*/
 /*}*/
-/*.product-item-details .product.options .content {*/
-/*    display: block !important;*/
-/*}*/
+.checkout-index-index .form.payments hr {
+    display: none;
+}
+.checkout-index-index .checkout-payment-method .step-content {
+    padding-top: 0px;
+}
+.checkout-index-index .action.checkout {
+    background: #9c3 !important;
+    border: 1px solid #9c3;
+    text-shadow: none;
+}
+.checkout-index-index .opc-sidebar {
+    margin: 86px 0 30px;
+}
+.checkout-index-index .opc-payment .payment-methods .payment-method {
+    margin-top: 51px;
+    padding: 30px 30px 10px 30px;
+    background: linear-gradient(to bottom, #fff 1%, #f9f9f9 98%) repeat scroll 0 0 #f5f5f5;
+    /* border-bottom: 1px solid #dfdfdf; */
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-top-color: #dfdfdf;
+    border-top: 4px solid #dfdfdf;
+}
+.checkout-index-index .form.form-discount .actions-toolbar .action-apply {
+    background: #9c3 !important;
+    border: 0px solid #9c3 !important;
+    text-shadow: none;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    margin-left: 10px !important;
+}
+.checkout-index-index .form.form-discount .actions-toolbar .action-apply span {
+    color: white;
+}
+.checkout-onepage-success .checkout-success p {
+    font-size: 15px;
+    font-weight: 500;
+}
+.checkout-onepage-success .checkout-success p.info {
+    font-size: 18px;
+    font-weight: 500;
+}
+.checkout-onepage-success .page-title-wrapper .page-title {
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: normal;
+    color: grey;
+}
+.checkout-onepage-success .actions-toolbar .action.continue {
+    background: #9c3 !important;
+    border: 1px solid #9c3 !important;
+    text-shadow: none;
+}
+.checkout-onepage-success #registration p {
+    font-size: 15px;
+    font-weight: normal;
+}
+.checkout-onepage-success #registration p span {
+    font-size: 13px;
+    font-weight: normal;
+}
+.checkout-onepage-success #registration a {
+    background: #9c3 !important;
+    border: 1px solid #9c3 !important;
+    text-shadow: none;
+}
+.checkout-onepage-success .page-main {
+    width: auto;
+    padding: 35px 0;
+}

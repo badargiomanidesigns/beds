@@ -4,6 +4,20 @@
     }
 }
 
+@media (min-width: 991px) and (max-width: 1199.98px) {
+    .telephone-cms .header-extra-info .tele a span{
+        font-size: 22px;
+    }
+
+    .telephone-cms .header-extra-info .tele .phone-icon.bi.bi-telephone{
+        font-size: 22px;
+    }
+
+    .minicart-wrapper .action.showcart .fa-shopping-cart{
+        font-size: 13px;
+    }
+}
+
 
 
 
