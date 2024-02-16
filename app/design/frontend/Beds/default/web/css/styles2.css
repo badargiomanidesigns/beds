@@ -258,6 +258,16 @@ form.form-cart {
     color: white;
     padding: 5px 14px;
 }
+.page-main {
+    padding: 40px 0;
+}
+.page-main > .page-title-wrapper .page-title {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
 .checkout-methods-items .action.checkout {
     background: #9c3 !important;
     border: 1px solid #9c3;
@@ -416,4 +426,164 @@ form.form-cart {
 .checkout-onepage-success .page-main {
     width: auto;
     padding: 35px 0;
+}
+
+@media screen and (max-width: 991px) {
+    .nav-sections {
+        padding: 0 !important;
+        -webkit-overflow-scrolling: touch;
+        -webkit-transition: left 0.3s;
+        -moz-transition: left 0.3s;
+        -ms-transition: left 0.3s;
+        transition: left 0.3s;
+        height: 100%;
+        left: calc(-1 * (100% - 54px));
+        overflow: auto;
+        position: fixed;
+        top: 0;
+        width: calc(100% - 54px);
+    }
+    .nav-sections-items {
+        position: relative;
+        z-index: 1;
+    }
+    .nav-sections-item-content {
+        box-sizing: border-box;
+        float: right;
+        margin-left: -100%;
+        margin-top: 71px;
+        width: 100%;
+        padding: 25px 0;
+    }
+    .navigation {
+        width: 100%;
+        background-color: #9d1c20 !important;
+        padding: 0;
+
+    }
+    .navigation ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .navigation .level0 {
+        border-top: 1px solid #d1d1d1;
+        font-size: 1.6rem;
+    }
+    .navigation li {
+        margin: 0;
+    }
+    .navigation a {
+        display: block;
+        padding-top: 10px;
+        padding-right: 0;
+        padding-bottom: 10px;
+        padding-left: 15px;
+    }
+    .navigation .level0 > .level-top {
+        font-weight: 700;
+        padding: 8px 40px 8px 15px;
+        text-transform: uppercase;
+        word-wrap: break-word;
+    }
+    .main-menu-wrap .menu-center {
+        display: block !important;
+    }
+    .header-wrapper.clearfix .nav-toggle {
+        left: 13px;
+        top: 20px;
+        color: #fff;
+    }
+    .main-menu-wrap .nav-sections {
+        background-color: #9d1c20;
+    }
+    .nav-sections-item-title {
+        background: transparent;
+        border: none;
+        border-width: 0;
+    }
+    .nav-sections-item-title.active {
+        background: #000;
+        border: solid #000;
+        border-width: 0 0 1px 1px;
+    }
+    .nav-open .nav-sections {
+        -webkit-box-shadow: 0 0 5px 0 rgba(50, 50, 50, 0.75);
+        -moz-box-shadow: 0 0 5px 0 rgba(50, 50, 50, 0.75);
+        -ms-box-shadow: 0 0 5px 0 rgba(50, 50, 50, 0.75);
+        box-shadow: 0 0 5px 0 rgba(50, 50, 50, 0.75);
+        left: 0;
+        z-index: 99;
+    }
+    .nav-toggle {
+        display: block !important;
+    }
+    .nav-toggle:before {
+        color: #fff;
+    }
+    .nav-toggle:hover:before {
+        color: #fff;
+    }
+    /*.nav-before-open {*/
+    /*    height: 100%;*/
+    /*    overflow-x: hidden;*/
+    /*    width: 100%;*/
+    /*}*/
+    .nav-open .nav-toggle:after {
+        background: rgba(0, 0, 0, 0.7);
+        content: '';
+        display: block;
+        height: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+}
+
+
+/*@media only screen and (max-width: 991px) {*/
+/*    .nav-before-open {*/
+/*        height: 100%;*/
+/*        overflow-x: hidden;*/
+/*        width: 100%;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 991px), print {*/
+
+/*    .page-wrapper {*/
+/*        margin: 0;*/
+/*        position: relative;*/
+/*        transition: margin 0.3s ease-out 0s;*/
+/*    }*/
+
+/*}*/
+
+/*@media only screen and (max-width: 991px) {*/
+/*.nav-open .page-wrapper {*/
+/*    left: calc(100% - 54px);*/
+/*    }*/
+/*}*/
+
+/* Customer account css */
+
+.customer-account-login .block-customer-login .form-login .action.login {
+    background: #9c3 !important;
+    border: 1px solid #9c3;
+    text-shadow: none;
+}
+.customer-account-login .block-customer-login .form-login .action.login span {
+
+}
+.customer-account-login .block-new-customer .action.create {
+    background: #9c3 !important;
+    border: 1px solid #9c3;
+    text-shadow: none;
+}
+.customer-account-login .block-new-customer .action.create span {
+
 }

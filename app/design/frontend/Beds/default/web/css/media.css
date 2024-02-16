@@ -5,15 +5,15 @@
 }
 
 @media (min-width: 991px) and (max-width: 1199.98px) {
-    .telephone-cms .header-extra-info .tele a span{
+    .telephone-cms .header-extra-info .tele a span {
         font-size: 22px;
     }
 
-    .telephone-cms .header-extra-info .tele .phone-icon.bi.bi-telephone{
+    .telephone-cms .header-extra-info .tele .phone-icon.bi.bi-telephone {
         font-size: 22px;
     }
 
-    .minicart-wrapper .action.showcart .fa-shopping-cart{
+    .minicart-wrapper .action.showcart .fa-shopping-cart {
         font-size: 13px;
     }
 }
@@ -21,15 +21,63 @@
 
 
 
+@media screen and (max-width: 991px) {
+    /* navigation menu */
+    .nav-sections {
+        padding: 0 !important;
+    }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+    .navigation {
+        width: 100%;
+        background-color: #9d1c20 !important;
 
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-menu-wrap .menu-center {
+        display: block !important;
+    }
+
+    .header-wrapper.clearfix .nav-toggle {
+        left: 13px;
+        top: 20px;
+        color: #fff;
+    }
+
+    .main-menu-wrap .nav-sections {
+        background-color: #9d1c20;
+    }
+
+    .nav-sections-item-title {
+        background: transparent;
+        border: none;
+        border-width: 0;
+    }
+
+    .nav-sections-item-title.active {
+        background: #000;
+        border: solid #000;
+        border-width: 0 0 1px 1px;
+    }
+
+    .nav-toggle:before {
+        color: #fff;
+    }
+
+    .nav-toggle:hover:before {
+        color: #fff;
+    }
+    /* navigation menu */
 }
-@media (min-width: 768px) and (max-width: 991.98px) {
 
-}
 
-@media (min-width: 1200px) and (max-width: 1399.98px) {
 
-}
+@media (min-width: 576px) and (max-width: 767.98px) {}
 
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
