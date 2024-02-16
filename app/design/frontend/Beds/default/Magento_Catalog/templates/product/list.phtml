@@ -77,8 +77,10 @@ $_helper = $block->getData('outputHelper');
                                     <?= $productImage->toHtml() ?>
                                 </a>
                             </div>
-                            <?= $block->getReviewsSummaryHtml($_product, $templateType) ?>
-                            <?= /* @noEscape */ $block->getProductPrice($_product) ?>
+                            <div class="rev-price-div">
+                                <?= $block->getReviewsSummaryHtml($_product, $templateType) ?>
+                                <?= /* @noEscape */ $block->getProductPrice($_product) ?>
+                            </div>
 
                             <?= $block->getProductDetailsHtml($_product) ?>
 

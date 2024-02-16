@@ -569,21 +569,117 @@ form.form-cart {
 /*    }*/
 /*}*/
 
+
+
+
+
 /* Customer account css */
 
 .customer-account-login .block-customer-login .form-login .action.login {
-    background: #9c3 !important;
-    border: 1px solid #9c3;
+    background: #e13b3f !important;
+    border: 1px solid #e13b3f;
     text-shadow: none;
 }
 .customer-account-login .block-customer-login .form-login .action.login span {
 
 }
 .customer-account-login .block-new-customer .action.create {
-    background: #9c3 !important;
-    border: 1px solid #9c3;
+    background: #e13b3f !important;
+    border: 1px solid #e13b3f;
+    border-radius: 0px;
     text-shadow: none;
 }
 .customer-account-login .block-new-customer .action.create span {
 
+}
+.customer-account-login .featured-box {
+    border: 1px solid #ececec;
+    background: #fff;
+    border-top: 4px solid #08c;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+    border-top-color: #e13b3f;
+}
+.customer-account-login .featured-box .box-content {
+    padding: 35px 25px;
+}
+.customer-account-login .action.remind {
+     text-decoration: none;
+     color: #000;
+}
+.customer-account-login .action.remind:hover {
+    text-decoration: underline;
+    color: #e13b3f;
+}
+.customer-account-forgotpassword .featured-box {
+    border: 1px solid #ececec;
+    background: #fff;
+    border-top: 4px solid #08c;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+    border-top-color: #e13b3f;
+}
+.customer-account-forgotpassword .featured-box .box-content {
+    padding: 35px 25px;
+}
+.customer-account-forgotpassword .password.forget .action.submit {
+    background: #e13b3f !important;
+    border: 1px solid #e13b3f;
+    text-shadow: none;
+}
+.login-container .block .block-title {
+    margin-bottom: 2em;
+}
+.customer-account-create .featured-box {
+    border: 1px solid #ececec;
+    background: #fff;
+    border-top: 4px solid #08c;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+    border-top-color: #e13b3f;
+}
+.customer-account-create .featured-box .box-content {
+    padding: 35px 25px;
+}
+.customer-account-create .form-create-account .action.submit {
+     background: #e13b3f !important;
+     border: 1px solid #e13b3f;
+     text-shadow: none;
+ }
+.customer-account-create .page-title-wrapper {
+    text-align: center;
+}
+@media screen and (min-width: 991px) {
+    .customer-account-create .featured-box {
+        width: 52.6%;
+    }
+}
+.account .featured-box {
+    border: 1px solid #ececec;
+    background: #fff;
+    border-top: 4px solid #08c;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+    border-top-color: #e13b3f;
+}
+.account .featured-box .box-content {
+    padding: 35px 25px;
+}
+.customer-account-index .featured-box {
+    margin-bottom: 2em;
+}
+.customer-account-index h1.page-title {
+    padding-bottom: 1em;
+}
+.block-collapsible-nav .item.current a, .block-collapsible-nav .item.current > strong {
+    border-color: #e13b3f;
+}
+.customer-account-edit .form-edit-account .action.save {
+    background-color: #e13b3f;
+    border: 1px solid #e13b3f;
+    text-shadow: none;
+}
+.account .form-newsletter-manage {
+    border: 1px solid #ececec;
+    background: #fff;
+    border-top: 4px solid #08c;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+    border-top-color: #e13b3f;
+    padding: 35px 25px;
 }

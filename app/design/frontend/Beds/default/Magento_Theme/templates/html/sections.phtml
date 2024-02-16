@@ -17,7 +17,7 @@ $group = $block->getGroupName();
 $groupCss = $block->getGroupCss();
 ?>
 <?php if ($detailedInfoGroup = $block->getGroupChildNames($group)):?>
-    <div id="main-menu" class="sections <?= $block->escapeHtmlAttr($groupCss) ?> container">
+    <div id="main-menu" class="sections <?= $block->escapeHtmlAttr($groupCss) ?>">
         <?php $layout = $block->getLayout(); ?>
         <div class="section-items <?= $block->escapeHtmlAttr($groupCss) ?>-items"
              data-mage-init='{"tabs":{"openedState":"active"}}'>

@@ -11,7 +11,7 @@
 <div data-block="minicart" class="minicart-wrapper">
     <a class="action showcart" href="<?= $block->escapeUrl($block->getShoppingCartUrl()) ?>"
        data-bind="scope: 'minicart_content'">
-        <i class="minicart-icon fa fa-shopping-cart"></i>
+        <!--<i class="minicart-icon fa fa-shopping-cart"></i>-->
         <span class="text"><?= $block->escapeHtml(__('My Cart')) ?></span>
         <span class="counter qty empty"
               data-bind="css: { empty: !!getCartParam('summary_count') == false && !isLoading() },
